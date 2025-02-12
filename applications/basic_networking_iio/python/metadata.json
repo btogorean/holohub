@@ -1,0 +1,37 @@
+{
+	"application": {
+		"name": "Basic Networking iio test",
+		"authors": [
+			{
+				"name": "N/A",
+				"affiliation": "ADI"
+			}
+		],
+		"language": "Python",
+		"version": "1.0",
+		"changelog": {
+			"1.0": "Initial Release"
+		},
+		"platforms": ["amd64", "arm64"],
+		"tags": ["Network", "Networking", "UDP", "Ethernet", "IP", "TCP"],
+		"holoscan_sdk": {
+			"minimum_required_version": "0.6.0",
+			"tested_versions": [
+				"0.6.0",
+				"2.1.0",
+				"2.2.0"
+			]
+		},
+		"ranking": 1,
+		"dependencies": {
+			"operators": [{
+				"name": "basic_network",
+				"version": "1.0"
+			}]
+		},
+		"run": {
+			"command": "python3 <holohub_app_source>/basic_networking_iio.py",
+			"workdir": "holohub_app_bin"
+		}
+	}
+}
