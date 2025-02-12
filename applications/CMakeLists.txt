@@ -65,6 +65,9 @@ add_holohub_application(hyperspectral_segmentation)
 
 add_subdirectory(laser_detection_latency)
 
+add_holohub_application(matlab_classify_modulator DEPENDS
+                        OPERATORS basic_network)
+
 add_holohub_application(multiai_endoscopy)
 
 add_holohub_application(multiai_ultrasound)
